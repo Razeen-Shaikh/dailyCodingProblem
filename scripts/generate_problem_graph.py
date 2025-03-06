@@ -28,8 +28,8 @@ if not os.path.exists(PROBLEMS_FILE):
 try:
     with open(PROBLEMS_FILE, "r") as file:
         problems = json.load(file)
-except json.JSONDecodeError:
-    raise ValueError("Error: problems.json is not a valid JSON file.")
+except json.JSONDecodeError as e:
+    raise ValueError("Error: problems.json is not a valid JSON file.") from e
 
 # Convert to DataFrame
 df = pd.DataFrame(problems)
