@@ -4,28 +4,34 @@ import requests
 # GitHub repo details
 REPO_OWNER = "Razeen-Shaikh"
 REPO_NAME = "dailyCodingProblem"
-API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/issues?state=all&per_page=100&page="  # `per_page=100` to get more issues per request
+API_URL = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/issues?state=all&per_page=100&page="
 
 def fetch_all_issues(api_url):
     issues = []
     page = 1  # Start from the first page
 
     while True:
-        response = requests.get(api_url + str(page), headers={"Accept": "application/vnd.github.v3+json"})
-        
+        response = requests.get(api_url + str(page), headers={"Accept": "application/vnd.github.v3+json"}, timeout=10)
+
         if response.status_code == 200:
             page_issues = response.json()
-            
+
             # If there are no issues returned, break the loop
             if not page_issues:
                 break
-            
+
             issues.extend(page_issues)
             page += 1  # Increment to fetch the next page
+        elif response.status_code == 403:
+            if retry_after := response.headers.get("Retry-After"):
+                print(f"⚠️ Rate limit exceeded on page {page}. Please retry after {retry_after} seconds.")
+            else:
+                print(f"⚠️ Rate limit exceeded on page {page}. Please wait before retrying.")
+            break
         else:
             print(f"❌ Failed to fetch GitHub issues on page {page}: {response.status_code}")
             break
-    
+
     return issues
 
 # Fetch all GitHub issues using pagination

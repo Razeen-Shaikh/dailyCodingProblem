@@ -3,6 +3,7 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
+import logging
 
 # File paths
 PROBLEMS_FILE = "problems.json"
@@ -31,12 +32,19 @@ try:
 except json.JSONDecodeError as e:
     raise ValueError("Error: problems.json is not a valid JSON file.") from e
 
+def handle_companies(x):
+    if isinstance(x, list):
+        # Convert the list of companies to a comma-separated string
+        return ", ".join(x)
+    logging.warning("Expected list for 'companies' field but received %s. Defaulting to ['Unknown'].", type(x).__name__)
+    return "Unknown"
+
+
 # Convert to DataFrame
 df = pd.DataFrame(problems)
 if df.empty:
     raise ValueError("Error: No problems data found in problems.json.")
-df["companies"] = df["companies"].apply(lambda x: x if isinstance(x, list) else ["Unknown"])
-df = df.explode("companies", ignore_index=True)
+df["companies"] = df["companies"].apply(handle_companies)
 
 # Group data by company
 company_stats = (
@@ -53,10 +61,7 @@ fig, ax = plt.subplots(figsize=(12, 8))
 ax.set_facecolor('#f8f9fa')
 fig.patch.set_facecolor('white')
 
-# Use company-specific colors or default color
-bar_colors = [COMPANY_COLORS.get(company, DEFAULT_COLOR) for company in company_stats["companies"]]
-
-bars_solved = ax.bar(company_stats["companies"], company_stats["solved"], color=bar_colors, label="Solved", alpha=0.8)
+bars_solved = ax.bar(company_stats["companies"], company_stats["solved"], color="green", label="Solved", alpha=0.8)
 bars_unsolved = ax.bar(company_stats["companies"], company_stats["unsolved"], bottom=company_stats["solved"], color="#e74c3c", label="Unsolved", alpha=0.8)
 
 ax.set_xlabel("Company", fontsize=12, fontweight='bold')
@@ -67,16 +72,6 @@ ax.set_title("Problem Statistics by Company", fontsize=14, fontweight='bold', y=
 ax.set_xticks(range(len(company_stats["companies"])))
 ax.set_xticklabels(company_stats["companies"], rotation=45, ha="right")
 
-# Add value labels on bars
-def add_value_labels(bars):
-    for bar in bars:
-        height = bar.get_height()
-        if height > 0:
-            ax.text(bar.get_x() + bar.get_width()/2, bar.get_y() + height/2, f'{int(height)}', ha='center', va='center', fontsize=9)
-
-add_value_labels(bars_solved)
-add_value_labels(bars_unsolved)
-
 ax.grid(True, axis='y', linestyle='--', alpha=0.7)
 ax.legend(loc='upper right', fontsize=10)
 
@@ -84,15 +79,16 @@ for spine in ax.spines.values():
     spine.set_linewidth(0.5)
     spine.set_color('#666666')
 
-plt.tight_layout()
-plt.savefig(STATS_IMAGE, dpi=300, bbox_inches='tight', facecolor='white')
-plt.close()
+try:
+    plt.tight_layout()
+    plt.savefig(STATS_IMAGE, dpi=300, bbox_inches='tight', facecolor='white')
+    plt.close()
+except Exception as error:
+    print(f"Error saving image {STATS_IMAGE}: {error}")
 
 
 # Generate Markdown Table
-markdown_table = """## 📊 Problem Statistics
-
-<div align="center">
+markdown_table = """<!-- stats-start -->
 
 <table>
 <tr>
@@ -114,7 +110,7 @@ markdown_table += """</table>
 </tr>
 </table>
 
-</div>
+<!-- stats-end -->
 """
 
 # Update README.md
@@ -123,7 +119,7 @@ try:
         with open(README_FILE, "r") as file:
             content = file.read()
 
-        content = re.sub(r"## 📊 Problem Statistics.*", markdown_table, content, flags=re.DOTALL)
+        content = re.sub(r"<!-- stats-start -->.*?<!-- stats-end -->", markdown_table, content, flags=re.DOTALL)
 
         with open(README_FILE, "w") as file:
             file.write(content)

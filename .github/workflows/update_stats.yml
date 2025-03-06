@@ -18,7 +18,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install Dependencies
-        run: pip install requests pandas matplotlib
+        run: pip install requests pandas matplotlib re logging
 
       - name: Fetch Issues and Update Stats
         run: python scripts/fetch_issues.py

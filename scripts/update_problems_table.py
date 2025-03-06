@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 import os
+import re
 
 # 📂 File Paths
 PROBLEMS_FILE = "problems.json"
@@ -83,32 +84,37 @@ for problem in problems:
     markdown_table += f"| [{problem['title']}]({problem['url']}) | {company_badges} | {difficulty_badge} | {status_badge} |\n"
 
 # 🔄 Update Problems Table in README
+START_MARKER = "<!-- START PROBLEMS TABLE -->"
+END_MARKER = "<!-- END PROBLEMS TABLE -->"
+
 try:
     with open(README_FILE, "r") as readme_file:
-        content = readme_file.readlines()
+        content = readme_file.read()
 
-    start_index = next(
-        (i for i, line in enumerate(content) if "Problem" in line and "Companies" in line and "Difficulty" in line and "Status" in line),
-        None
-    )
+        # Define a pattern to match the existing problems table block.
+        pattern = re.compile(
+            r"<!-- START PROBLEMS TABLE -->.*?<!-- END PROBLEMS TABLE -->",
+            re.DOTALL
+        )
 
-    if start_index is None:
-        print("⚠️ Problems table not found in README.md. Appending new table.")
-        updated_content = content + ["\n" + markdown_table]
-    else:
-        end_index = start_index + 1
-        while end_index < len(content) and content[end_index].strip().startswith("|"):
-            end_index += 1
-        updated_content = content[:start_index] + [line + "\n" for line in markdown_table.split("\n")] + content[end_index:]
+        new_table_block = f"{START_MARKER}\n{markdown_table}{END_MARKER}"
 
-    with open(README_FILE, "w") as readme_file:
-        readme_file.writelines(updated_content)
+        if pattern.search(content):
+            # Replace the existing table with the new markdown table
+            updated_content = pattern.sub(new_table_block, content)
+        else:
+            print("⚠️ Problems table not found in README.md. Appending new table.")
+            updated_content = content + "\n" + new_table_block
+
+        with open(README_FILE, "w") as readme_file:
+            readme_file.write(updated_content)
 
     print("✅ README.md successfully updated with new problem list.")
 
 except FileNotFoundError:
     print("⚠️ README.md not found. Creating a new one with the problem list.")
     with open(README_FILE, "w") as file:
-        file.write(markdown_table)
+        file.write(new_table_block)
 
 print("🚀 Script execution completed successfully!")
+
