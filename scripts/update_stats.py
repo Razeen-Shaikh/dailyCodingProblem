@@ -14,10 +14,10 @@ for p in problems:
     if p["solved"]:
         company_stats[company]["solved"] += 1
 
-# Generate Markdown Table
-table = "| Company | Total Problems | Solved | Unsolved |\n"
-table += "|---------|---------------|--------|----------|\n"
-
+table = (
+    "| Company | Total Problems | Solved | Unsolved |\n"
+    + "|---------|---------------|--------|----------|\n"
+)
 for company, stats in company_stats.items():
     unsolved = stats["total"] - stats["solved"]
     table += f"| {company} | {stats['total']} | {stats['solved']} ✅ | {unsolved} ❌ |\n"
@@ -28,14 +28,14 @@ readme_path = "../README.md"
 with open(readme_path, "r") as file:
     content = file.readlines()
 
-# Find the section where the table should be updated
-start_index = None
-for i, line in enumerate(content):
-    if "| Company | Total Problems | Solved | Unsolved |" in line:
-        start_index = i
-        break
-
-if start_index:
+if start_index := next(
+    (
+        i
+        for i, line in enumerate(content)
+        if "| Company | Total Problems | Solved | Unsolved |" in line
+    ),
+    None,
+):
     end_index = start_index
     while end_index < len(content) and "|" in content[end_index]:
         end_index += 1
