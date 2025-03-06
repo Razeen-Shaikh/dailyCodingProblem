@@ -26,9 +26,6 @@ jobs:
       - name: Update Problems Table
         run: python scripts/update_problems_table.py
 
-      - name: Fetch Issues and Update Stats
-        run: python scripts/fetch_issues.py
-
       - name: Generate Problem Graph
         run: python scripts/generate_problem_graph.py
 
