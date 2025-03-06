@@ -3,34 +3,36 @@ name: Update Problem Stats
 on:
   schedule:
     - cron: "0 0 * * *" # Runs daily at midnight UTC
-  workflow_dispatch: # Allows manual triggering
+  workflow_dispatch: # Allows manual runs
 
 jobs:
-  update-readme:
+  update_stats:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Python
-        uses: actions/setup-python@v3
+      - name: Set Up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.8"
+          python-version: "3.12"
 
       - name: Install Dependencies
-        run: pip install requests # Needed to fetch GitHub issues
+        run: pip install requests pandas matplotlib re logging
 
-      - name: Fetch Problems from GitHub Issues
-        run: python scripts/fetch_github_issues.py # Pull latest problems
+      - name: Fetch Issues and Update Stats
+        run: python scripts/fetch_issues.py
 
-      - name: Update README Stats
-        run: python scripts/update_stats.py # Update README with new stats
+      - name: Update Problems Table
+        run: python scripts/update_problems_table.py
+
+      - name: Generate Problem Graph
+        run: python scripts/generate_problem_graph.py
 
       - name: Commit and Push Changes
         run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
-          git add README.md problems.json
-          git commit -m "Auto-update problem stats" || echo "No changes to commit"
+          git add problems.json README.md
+          git commit -m "🔄 Updated problem statistics"
           git push
