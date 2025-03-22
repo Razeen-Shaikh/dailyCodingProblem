@@ -54,7 +54,7 @@
 <tr>
     <td style="vertical-align: top; padding-right: 20px;">
     <table>
-        <tr><th width="25%">Company</th><th width="25%">Total</th><th width="25%">Solved</th><th>Unsolved</th></tr>
+        <tr><th>Company</th><th>Total</th><th>Solved</th><th>Unsolved</th></tr>
 <tr><td>Apple</td><td>10</td><td>✅ 1</td><td>❌ 9</td></tr>
 <tr><td></td><td>7</td><td>❌ 0</td><td>❌ 7</td></tr>
 <tr><td>Google</td><td>2</td><td>✅ 1</td><td>❌ 1</td></tr>
@@ -73,6 +73,7 @@
 </table>
 
 <!-- stats-end -->
+
 
 
 
