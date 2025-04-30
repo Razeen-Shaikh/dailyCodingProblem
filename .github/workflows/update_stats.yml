@@ -34,6 +34,11 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
+      - name: Create Random Branch Name
+        id: random_branch
+        run: |
+          echo "branch_name=update-problem-stats-${{ github.run_id }}" >> $GITHUB_ENV
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
@@ -41,5 +46,5 @@ jobs:
           commit-message: "🔄 Updated problem statistics"
           title: "🔄 Auto-update: Problem Statistics"
           body: "This PR updates the problem statistics. Please review and merge."
-          branch: update-problem-stats
+          branch: ${{ env.branch_name }}
           delete-branch: true
