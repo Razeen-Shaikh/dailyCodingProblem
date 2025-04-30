@@ -20,18 +20,18 @@
 | [Daily Coding Problem: Problem #33](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/16) | ![Microsoft](https://img.shields.io/badge/-Microsoft-green?style=flat&logo=microsoft) | ![Easy](https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
 | [Daily Coding Problem #32](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/15) | ![JaneStreet](https://img.shields.io/badge/-JaneStreet-red?style=flat&logo=janestreet) | ![Hard](https://img.shields.io/badge/Difficulty-Hard-red?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
 | [Daily Coding Problem #22](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/2) | ![Microsoft](https://img.shields.io/badge/-Microsoft-green?style=flat&logo=microsoft) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
-| [Daily Coding Problem #14](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/13) | ![Google](https://img.shields.io/badge/-Google-blue?style=flat&logo=google) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
+| [Daily Coding Problem: Problem #14](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/13) | ![Google](https://img.shields.io/badge/-Google-blue?style=flat&logo=google) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
 | [Daily Coding Problem #11](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/14) | ![Twitter](https://img.shields.io/badge/-Twitter-lightblue?style=flat&logo=twitter) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
 | [Daily Coding Problem #9 [Hard]](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/11) |  | ![Unknown](https://img.shields.io/badge/Difficulty-Unknown-lightgray?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
-| [Daily Coding Problem #8 [Easy]](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/10) |  | ![Unknown](https://img.shields.io/badge/Difficulty-Unknown-lightgray?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
+| [Daily Coding Problem: Problem #8](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/10) | ![Google](https://img.shields.io/badge/-Google-blue?style=flat&logo=google) | ![Easy](https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
 | [Daily Coding Problem #7 [Medium]](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/9) |  | ![Unknown](https://img.shields.io/badge/Difficulty-Unknown-lightgray?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
-| [Daily Coding Problem #6 [Hard]](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8) |  | ![Unknown](https://img.shields.io/badge/Difficulty-Unknown-lightgray?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
-| [Daily Coding Problem #5 [Medium]](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/7) |  | ![Unknown](https://img.shields.io/badge/Difficulty-Unknown-lightgray?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
-| [Daily Coding Problem #4 [Hard]](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6) |  | ![Unknown](https://img.shields.io/badge/Difficulty-Unknown-lightgray?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
-| [Daily Coding Problem: Problem #3 [Medium]](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/5) |  | ![Unknown](https://img.shields.io/badge/Difficulty-Unknown-lightgray?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
-| [Array Product Except Self](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/4) | ![Uber](https://img.shields.io/badge/-Uber-black?style=flat&logo=uber) | ![Hard](https://img.shields.io/badge/Difficulty-Hard-red?style=flat) | ![Solved](https://img.shields.io/badge/Status-Solved-success?style=flat) |
-| [Job Scheduler](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/12) | ![Apple](https://img.shields.io/badge/-Apple-gray?style=flat&logo=apple) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![Solved](https://img.shields.io/badge/Status-Solved-success?style=flat) |
-| [Two Sum](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/3) | ![Google](https://img.shields.io/badge/-Google-blue?style=flat&logo=google) | ![Easy](https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat) | ![Solved](https://img.shields.io/badge/Status-Solved-success?style=flat) |
+| [Daily Coding Problem: Problem #6](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8) | ![Google](https://img.shields.io/badge/-Google-blue?style=flat&logo=google) | ![Hard](https://img.shields.io/badge/Difficulty-Hard-red?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
+| [Daily Coding Problem: Problem #5](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/7) | ![JaneStreet](https://img.shields.io/badge/-JaneStreet-red?style=flat&logo=janestreet) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
+| [Daily Coding Problem: Problem #4](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6) |  | ![Hard](https://img.shields.io/badge/Difficulty-Hard-red?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
+| [Daily Coding Problem: Problem #3](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/5) | ![Google](https://img.shields.io/badge/-Google-blue?style=flat&logo=google) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![InProgress](https://img.shields.io/badge/Status-InProgress-yellow?style=flat) |
+| [Daily Coding Problem: Array Product Except Self #2](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/4) | ![Uber](https://img.shields.io/badge/-Uber-black?style=flat&logo=uber) | ![Hard](https://img.shields.io/badge/Difficulty-Hard-red?style=flat) | ![Solved](https://img.shields.io/badge/Status-Solved-success?style=flat) |
+| [Daily Coding Problem: Job Scheduler #10](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/12) | ![Apple](https://img.shields.io/badge/-Apple-gray?style=flat&logo=apple) | ![Medium](https://img.shields.io/badge/Difficulty-Medium-orange?style=flat) | ![Solved](https://img.shields.io/badge/Status-Solved-success?style=flat) |
+| [Daily Coding Problem: Two Sum #1](https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/3) | ![Google](https://img.shields.io/badge/-Google-blue?style=flat&logo=google) | ![Easy](https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat) | ![Solved](https://img.shields.io/badge/Status-Solved-success?style=flat) |
 <!-- END PROBLEMS TABLE -->
 
 
@@ -56,10 +56,10 @@
     <table>
         <tr><th>Company</th><th>Total</th><th>Solved</th><th>Unsolved</th></tr>
 <tr><td>Apple</td><td>10</td><td>✅ 1</td><td>❌ 9</td></tr>
-<tr><td></td><td>7</td><td>❌ 0</td><td>❌ 7</td></tr>
-<tr><td>Google</td><td>2</td><td>✅ 1</td><td>❌ 1</td></tr>
+<tr><td>Google</td><td>5</td><td>✅ 1</td><td>❌ 4</td></tr>
+<tr><td></td><td>3</td><td>❌ 0</td><td>❌ 3</td></tr>
+<tr><td>JaneStreet</td><td>2</td><td>❌ 0</td><td>❌ 2</td></tr>
 <tr><td>Microsoft</td><td>2</td><td>❌ 0</td><td>❌ 2</td></tr>
-<tr><td>JaneStreet</td><td>1</td><td>❌ 0</td><td>❌ 1</td></tr>
 <tr><td>Pivotal</td><td>1</td><td>❌ 0</td><td>❌ 1</td></tr>
 <tr><td>Square</td><td>1</td><td>❌ 0</td><td>❌ 1</td></tr>
 <tr><td>Twitter</td><td>1</td><td>❌ 0</td><td>❌ 1</td></tr>
@@ -73,6 +73,7 @@
 </table>
 
 <!-- stats-end -->
+
 
 
 
