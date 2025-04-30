@@ -37,8 +37,7 @@ jobs:
       - name: Create Random Branch Name
         id: random_branch
         run: |
-          RANDOM_NAME=$(openssl rand -hex 6)
-          echo "branch_name=update-problem-stats-${RANDOM_NAME}" >> $GITHUB_ENV
+          echo "branch_name=update-problem-stats-${{ github.run_id }}" >> $GITHUB_ENV
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
