@@ -126,7 +126,7 @@
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #14",
+        "title": "Daily Coding Problem: Problem #14",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/13",
         "companies": [
             "Google"
@@ -151,10 +151,12 @@
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #8 [Easy]",
+        "title": "Daily Coding Problem: Problem #8",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/10",
-        "companies": [],
-        "difficulty": "Unknown",
+        "companies": [
+            "Google"
+        ],
+        "difficulty": "Easy",
         "status": "InProgress"
     },
     {
@@ -165,35 +167,41 @@
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #6 [Hard]",
+        "title": "Daily Coding Problem: Problem #6",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8",
-        "companies": [],
-        "difficulty": "Unknown",
+        "companies": [
+            "Google"
+        ],
+        "difficulty": "Hard",
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #5 [Medium]",
+        "title": "Daily Coding Problem: Problem #5",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/7",
-        "companies": [],
-        "difficulty": "Unknown",
+        "companies": [
+            "JaneStreet"
+        ],
+        "difficulty": "Medium",
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #4 [Hard]",
+        "title": "Daily Coding Problem: Problem #4",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6",
         "companies": [],
-        "difficulty": "Unknown",
+        "difficulty": "Hard",
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem: Problem #3 [Medium]",
+        "title": "Daily Coding Problem: Problem #3",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/5",
-        "companies": [],
-        "difficulty": "Unknown",
+        "companies": [
+            "Google"
+        ],
+        "difficulty": "Medium",
         "status": "InProgress"
     },
     {
-        "title": "Array Product Except Self",
+        "title": "Daily Coding Problem: Array Product Except Self #2",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/4",
         "companies": [
             "Uber"
@@ -202,7 +210,7 @@
         "status": "Solved"
     },
     {
-        "title": "Job Scheduler",
+        "title": "Daily Coding Problem: Job Scheduler #10",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/12",
         "companies": [
             "Apple"
@@ -211,7 +219,7 @@
         "status": "Solved"
     },
     {
-        "title": "Two Sum",
+        "title": "Daily Coding Problem: Two Sum #1",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/3",
         "companies": [
             "Google"
