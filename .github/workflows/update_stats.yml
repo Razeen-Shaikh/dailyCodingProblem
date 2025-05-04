@@ -48,3 +48,10 @@ jobs:
           body: "This PR updates the problem statistics. Please review and merge."
           branch: ${{ env.branch_name }}
           delete-branch: true
+
+      - name: Enable Auto-Merge
+        uses: peter-evans/enable-pull-request-automerge@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
+          pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
+          merge-method: squash
