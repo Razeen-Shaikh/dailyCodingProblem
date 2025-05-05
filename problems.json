@@ -135,7 +135,25 @@
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #11",
+        "title": "Daily Coding Problem: Problem #13",
+        "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/48",
+        "companies": [
+            "Amazon"
+        ],
+        "difficulty": "Hard",
+        "status": "InProgress"
+    },
+    {
+        "title": "Daily Coding Problem: Problem #12",
+        "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/47",
+        "companies": [
+            "Amazon"
+        ],
+        "difficulty": "Hard",
+        "status": "InProgress"
+    },
+    {
+        "title": "Daily Coding Problem: Problem #11",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/14",
         "companies": [
             "Twitter"
@@ -144,10 +162,10 @@
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #9 [Hard]",
+        "title": "Daily Coding Problem: Problem #9",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/11",
         "companies": [],
-        "difficulty": "Unknown",
+        "difficulty": "Hard",
         "status": "InProgress"
     },
     {
@@ -160,10 +178,10 @@
         "status": "InProgress"
     },
     {
-        "title": "Daily Coding Problem #7 [Medium]",
+        "title": "Daily Coding Problem: Problem #7",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/9",
         "companies": [],
-        "difficulty": "Unknown",
+        "difficulty": "Medium",
         "status": "InProgress"
     },
     {
@@ -226,5 +244,12 @@
         ],
         "difficulty": "Easy",
         "status": "Solved"
+    },
+    {
+        "title": "Daily Coding Problem: Problem #15",
+        "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/49",
+        "companies": [],
+        "difficulty": "Medium",
+        "status": "InProgress"
     }
 ]
