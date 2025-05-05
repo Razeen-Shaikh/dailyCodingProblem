@@ -1,4 +1,8 @@
-"""
+import threading
+import time
+
+def job_scheduler(f, n):
+    """
     Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
 
     Args:
@@ -7,15 +11,7 @@
 
     Returns:
         None
-"""
-
-import threading
-import time
-
-
-
-def job_scheduler(f, n):
-    """Schedules function f to run after n milliseconds."""
+    """
     timer = threading.Timer(n / 1000, f)
     timer.start()
 

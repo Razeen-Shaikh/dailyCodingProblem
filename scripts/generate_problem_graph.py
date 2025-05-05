@@ -14,7 +14,8 @@ STATS_IMAGE = "stats.png"
 COMPANY_COLORS = {
     "Amazon": "orange", "Google": "blue", "Microsoft": "green", "Uber": "black",
     "Apple": "gray", "Pivotal": "teal", "Twitter": "lightblue", "Square": "purple",
-    "JaneStreet": "red"
+    "JaneStreet": "red", "Stripe": "#635bff",
+    "Facebook": "#3b5998", "Airbnb": "#ff5a60"
 }
 DEFAULT_COLOR = "blue"
 
@@ -55,60 +56,78 @@ company_stats = (
 company_stats["unsolved"] = company_stats["total"] - company_stats["solved"]
 company_stats.sort_values(by="total", ascending=False, inplace=True)
 
-# Create visualization (Vertical Bar Chart)
-plt.style.use('default')
-fig, ax = plt.subplots(figsize=(12, 8))
-ax.set_facecolor('#f8f9fa')
+# Create enhanced visualization (Stacked Bar Chart with style)
+plt.style.use("seaborn-v0_8-darkgrid")
+fig, ax = plt.subplots(figsize=(14, 8))
 fig.patch.set_facecolor('white')
+ax.set_facecolor('#f5f7fa')
 
-bars_solved = ax.bar(company_stats["companies"], company_stats["solved"], color="green", label="Solved", alpha=0.8)
-bars_unsolved = ax.bar(company_stats["companies"], company_stats["unsolved"], bottom=company_stats["solved"], color="#e74c3c", label="Unsolved", alpha=0.8)
+# Bar chart
+bar_width = 0.6
+x = range(len(company_stats))
+# Define custom color per company if available
+colors_solved = [COMPANY_COLORS.get(company, "#2ecc71") for company in company_stats["companies"]]
+colors_unsolved = ["#e74c3c"] * len(company_stats)  # Keep red for unsolved
 
-ax.set_xlabel("Company", fontsize=12, fontweight='bold')
-ax.set_ylabel("Number of Problems", fontsize=12, fontweight='bold')
-ax.set_title("Problem Statistics by Company", fontsize=14, fontweight='bold', y=1.05)
+bars_solved = ax.bar(x, company_stats["solved"], width=bar_width, label="Solved", color=colors_solved)
+bars_unsolved = ax.bar(x, company_stats["unsolved"], width=bar_width, bottom=company_stats["solved"], label="Unsolved", color=colors_unsolved)
 
-# Rotate x-axis labels for better visibility
-ax.set_xticks(range(len(company_stats["companies"])))
-ax.set_xticklabels(company_stats["companies"], rotation=45, ha="right")
+# Annotate bars with numbers
+for i, (solved, unsolved) in enumerate(zip(company_stats["solved"], company_stats["unsolved"])):
+    total = solved + unsolved
+    solved_pct = f"{(solved / total * 100):.0f}%"
+    unsolved_pct = f"{(unsolved / total * 100):.0f}%"
 
-ax.grid(True, axis='y', linestyle='--', alpha=0.7)
-ax.legend(loc='upper right', fontsize=10)
+    # Add both numeric and percent
+    if solved > 0:
+        ax.text(i, solved / 2, f"{solved}\n({solved_pct})", ha="center", va="center", fontsize=10, color="white", fontweight='bold')
+    if unsolved > 0:
+        ax.text(i, solved + unsolved / 2, f"{unsolved}\n({unsolved_pct})", ha="center", va="center", fontsize=10, color="white", fontweight='bold')
 
+
+# Labels and title
+ax.set_title("📊 Company-Wise Problem Solving Progress", fontsize=16, fontweight="bold", pad=20)
+ax.set_xlabel("Company", fontsize=12, fontweight="bold", labelpad=10)
+ax.set_ylabel("Number of Problems", fontsize=12, fontweight="bold", labelpad=10)
+
+# X-axis
+ax.set_xticks(x)
+ax.set_xticklabels(company_stats["companies"], rotation=45, ha="right", fontsize=11)
+
+# Grid and legend
+ax.grid(axis='y', linestyle='--', alpha=0.6)
+ax.legend(frameon=True, loc='upper right', fontsize=11)
+
+# Borders
 for spine in ax.spines.values():
-    spine.set_linewidth(0.5)
-    spine.set_color('#666666')
+    spine.set_visible(False)
 
+# Save the improved graph
 try:
     plt.tight_layout()
-    plt.savefig(STATS_IMAGE, dpi=300, bbox_inches='tight', facecolor='white')
+    plt.savefig(STATS_IMAGE, dpi=300, bbox_inches="tight", facecolor='white')
     plt.close()
+    print("✅ Improved graph saved successfully.")
 except Exception as error:
-    print(f"Error saving image {STATS_IMAGE}: {error}")
-
+    print(f"❌ Error saving improved image {STATS_IMAGE}: {error}")
 
 # Generate Markdown Table
 markdown_table = """<!-- stats-start -->
 
-<table>
-<tr>
-    <td style="vertical-align: top; padding-right: 20px;">
-    <table>
-        <tr><th>Company</th><th>Total</th><th>Solved</th><th>Unsolved</th></tr>
+<table style="border: none;">
+    <tr><th align="left">Company</th><th align="center">Total</th><th align="center">Solved</th><th align="center">Unsolved</th></tr>
 """
 
 for _, row in company_stats.iterrows():
     solved_status = "✅" if row['solved'] > 0 else "❌"
     unsolved_status = "✅" if row['unsolved'] == 0 else "❌"
-    markdown_table += f"<tr><td>{row['companies']}</td><td>{row['total']}</td><td>{solved_status} {row['solved']}</td><td>{unsolved_status} {row['unsolved']}</td></tr>\n"
+    markdown_table += f"<tr><td>{row['companies']}</td><td align='center'>{row['total']}</td><td align='center'>{solved_status} {row['solved']}</td><td align='center'>{unsolved_status} {row['unsolved']}</td></tr>\n"
 
 markdown_table += """</table>
-    </td>
-    <td style="text-align: center;">
-        <img src="stats.png" width="600px" alt="Problem Statistics">
-    </td>
-</tr>
-</table>
+
+<p align="center" style="margin-top: 20px;">
+    <img src="stats.png" width="600px" alt="Problem Statistics">
+</p>
 
 <!-- stats-end -->
 """
