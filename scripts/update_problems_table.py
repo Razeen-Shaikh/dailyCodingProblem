@@ -20,6 +20,9 @@ COMPANY_COLORS = {
     "Twitter": "lightblue",
     "Square": "purple",
     "JaneStreet": "red",
+    "Stripe": "#635bff",
+    "Facebook": "#3b5998",
+    "Airbnb": "#ff5a60",
 }
 DEFAULT_COLOR = "blue"  # Fallback color
 
@@ -68,20 +71,45 @@ print(f"✅ Graph saved as {STATS_IMAGE}")
 
 # 📋 Generate Problems Table
 markdown_table = (
-    "| Problem | Companies | Difficulty | Status |\n"
-    "|---------|-----------|------------|--------|\n"
+    "<table>\n"
+    "  <thead>\n"
+    "    <tr>\n"
+    "      <th>🆔</th>\n"
+    "      <th>🔗 Problem</th>\n"
+    "      <th>🏢 Companies</th>\n"
+    "      <th>🚩 Difficulty</th>\n"
+    "      <th>📊 Status</th>\n"
+    "      <th>📅 Added</th>\n"
+    "    </tr>\n"
+    "  </thead>\n"
+    "  <tbody>\n"
 )
-for problem in problems:
+
+for idx, problem in enumerate(problems, 1):
     company_badges = " ".join(
         [
-            f"![{company}](https://img.shields.io/badge/-{company}-{COMPANY_COLORS.get(company, DEFAULT_COLOR)}?style=flat&logo={company.lower()})"
-            for company in problem["companies"]
+            f"<img src='https://img.shields.io/badge/-{company}-{COMPANY_COLORS.get(company, DEFAULT_COLOR)}?style=flat&logo={company.lower()}' height='20'/>"
+            for company in problem.get("companies", [])
         ]
     )
-    difficulty_badge = f"![{problem['difficulty']}](https://img.shields.io/badge/Difficulty-{problem['difficulty'].replace(' ', '%20')}-{DIFFICULTY_COLORS.get(problem['difficulty'], 'lightgray')}?style=flat)"
-    status_badge = f"![{problem['status']}](https://img.shields.io/badge/Status-{problem['status']}-{STATUS_COLORS.get(problem['status'], 'lightgray')}?style=flat)"
+    difficulty_badge = f"<img src='https://img.shields.io/badge/Difficulty-{problem['difficulty'].replace(' ', '%20')}-{DIFFICULTY_COLORS.get(problem['difficulty'], 'lightgray')}?style=flat' height='20'/>"
+    status_badge = f"<img src='https://img.shields.io/badge/Status-{problem['status']}-{STATUS_COLORS.get(problem['status'], 'lightgray')}?style=flat' height='20'/>"
+    tags = ", ".join(problem.get("tags", []))
+    date_added = problem.get("date_added", "—")
+    notes = problem.get("notes", "—")
 
-    markdown_table += f"| [{problem['title']}]({problem['url']}) | {company_badges} | {difficulty_badge} | {status_badge} |\n"
+    markdown_table += (
+        f"    <tr>\n"
+        f"      <td>{idx}</td>\n"
+        f"      <td><a href='{problem['url']}'>{problem['title']}</a></td>\n"
+        f"      <td align='center'>{company_badges}</td>\n"
+        f"      <td align='center'>{difficulty_badge}</td>\n"
+        f"      <td align='center'>{status_badge}</td>\n"
+        f"      <td>{date_added}</td>\n"
+        f"    </tr>\n"
+    )
+
+markdown_table += "  </tbody>\n</table>\n"
 
 # 🔄 Update Problems Table in README
 START_MARKER = "<!-- START PROBLEMS TABLE -->"
