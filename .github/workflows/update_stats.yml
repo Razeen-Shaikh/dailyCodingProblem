@@ -67,4 +67,6 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
           merge-method: squash
+          merge-when-succeed: true # Optional, for added clarity
+
           
