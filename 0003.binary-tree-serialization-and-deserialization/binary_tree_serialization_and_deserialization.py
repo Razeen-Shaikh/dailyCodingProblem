@@ -55,9 +55,10 @@ ser = BinaryTree()
 deser = BinaryTree()
 
 # Deserialize and check the tree structure
-deserialized_root = deser.deserialize("1,2,3,#,#,4,5")
+serialized = ser.serialize(node)  # Serialize the node first
+deserialized_root = deser.deserialize(serialized)  # Deserialize the serialized string
 print(deserialized_root.left.left.val == 'left.left')  # Expected: True
 
 # Serialize and then deserialize
-serialized = ser.serialize("1,2,3,#,#,4,5")
+serialized = ser.serialize(node)
 print(f"Serialized: {serialized}")
