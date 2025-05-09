@@ -16,7 +16,6 @@ class BinaryTree:
     """
     def serialize(self, root):
         res = []
-        print("Starting serialization:", res)
 
         def dfs(node):
             if not node:
@@ -26,35 +25,24 @@ class BinaryTree:
                 dfs(node.left)
                 dfs(node.right)
 
-            # Debugging print
-            print(f"At Node({node}):", res)
-
         dfs(root)
-        print(f"Serialized output: {','.join(res)}")
         return ",".join(res)
 
     def deserialize(self, data):
         """Deserialize a string to a binary tree"""
-        print(f"Data to deserialize: {data}")
         values = iter(data.split(','))  # Turn string into an iterator for DFS
-        print(f"Values iterator: {values}")
         
         def dfs():
             val = next(values)  # Get the next value in the iterator
-            print(f"Processing value: {val}")
 
             if val == '#':  # Base case: If the value is '#', return None
                 return None
 
             node = Node(val)  # Create a new node
-            print(f"Created Node({val})")
 
             # Recursively process left and right children
             node.left = dfs()  # Left child
-            print(f"Node({val}) left child: {node.left}")
-
             node.right = dfs()  # Right child
-            print(f"Node({val}) right child: {node.right}")
             
             return node
         
