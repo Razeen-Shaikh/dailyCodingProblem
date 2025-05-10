@@ -217,7 +217,7 @@
     </tr>
     <tr>
       <td>26</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6'>Daily Coding Problem: Problem #4</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6'>First Missing Positive #4</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Stripe-#635bff?style=flat&logo=stripe' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Hard-red?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -228,12 +228,12 @@
       <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/5'>Binary Tree Serialization and Deserialization #3</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Google-blue?style=flat&logo=google' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Medium-orange?style=flat' height='20'/></td>
-      <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
+      <td align='center'><img src='https://img.shields.io/badge/Status-Solved-success?style=flat' height='20'/></td>
       <td>2023-02-11</td>
     </tr>
     <tr>
       <td>28</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/4'>Daily Coding Problem: Array Product Except Self #2</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/4'>Array Product Except Self #2</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Uber-black?style=flat&logo=uber' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Hard-red?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-Solved-success?style=flat' height='20'/></td>
@@ -241,7 +241,7 @@
     </tr>
     <tr>
       <td>29</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/12'>Daily Coding Problem: Job Scheduler #10</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/12'>Job Scheduler #10</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Apple-gray?style=flat&logo=apple' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Medium-orange?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-Solved-success?style=flat' height='20'/></td>
@@ -249,7 +249,7 @@
     </tr>
     <tr>
       <td>30</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/3'>Daily Coding Problem: Two Sum #1</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/3'>Two Sum #1</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Google-blue?style=flat&logo=google' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-Solved-success?style=flat' height='20'/></td>
@@ -274,7 +274,7 @@
 <table style="border: none;">
     <tr><th align="left">Company</th><th align="center">Total</th><th align="center">Solved</th><th align="center">Unsolved</th></tr>
 <tr><td>Apple</td><td align='center'>10</td><td align='center'>✅ 1</td><td align='center'>❌ 9</td></tr>
-<tr><td>Google</td><td align='center'>6</td><td align='center'>✅ 1</td><td align='center'>❌ 5</td></tr>
+<tr><td>Google</td><td align='center'>6</td><td align='center'>✅ 2</td><td align='center'>❌ 4</td></tr>
 <tr><td>Facebook</td><td align='center'>2</td><td align='center'>❌ 0</td><td align='center'>❌ 2</td></tr>
 <tr><td>Amazon</td><td align='center'>2</td><td align='center'>❌ 0</td><td align='center'>❌ 2</td></tr>
 <tr><td>Microsoft</td><td align='center'>2</td><td align='center'>❌ 0</td><td align='center'>❌ 2</td></tr>
@@ -292,6 +292,7 @@
 </p>
 
 <!-- stats-end -->
+
 
 
 

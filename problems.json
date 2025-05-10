@@ -300,7 +300,7 @@
         "notes": "`cons(a, b)` constructs a pair, and `car(pair)` and `cdr(pair)` returns the first and last element of that pair. For example, `car(cons(3, 4))` returns `3`, and `cdr(cons(3, 4))` returns `4`.\n\nGiven this implementation of cons:\n\n```py\ndef cons(a, b):\n    def pair(f):\n        return f(a, b)\n    return pair\n```\n\nImplement `car` and `cdr`."
     },
     {
-        "title": "Daily Coding Problem: Problem #4",
+        "title": "First Missing Positive #4",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6",
         "companies": [
             "Stripe"
@@ -318,13 +318,13 @@
             "Google"
         ],
         "difficulty": "Medium",
-        "status": "InProgress",
+        "status": "Solved",
         "tags": [],
         "date_added": "2023-02-11",
         "notes": "![Google](https://img.shields.io/badge/Google-4285F4?logo=google&logoColor=fff&style=for-the-badge)\n\nGiven the root to a binary tree, implement `serialize(root)`, which serializes the tree into a string, and `deserialize(s)`, which deserializes the string back into the tree.\n\nFor example, given the following Node class\n```\nclass Node:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n```\nThe following test should pass:\n```\nnode = Node('root', Node('left', Node('left.left')), Node('right'))\nassert deserialize(serialize(node)).left.left.val == 'left.left'\n```"
     },
     {
-        "title": "Daily Coding Problem: Array Product Except Self #2",
+        "title": "Array Product Except Self #2",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/4",
         "companies": [
             "Uber"
@@ -336,7 +336,7 @@
         "notes": "Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.\n\nFor example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].\n\nFollow-up: what if you can't use division?"
     },
     {
-        "title": "Daily Coding Problem: Job Scheduler #10",
+        "title": "Job Scheduler #10",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/12",
         "companies": [
             "Apple"
@@ -348,7 +348,7 @@
         "notes": "Implement a job scheduler which takes in a function `f` and an integer `n`, and calls `f` after `n` milliseconds."
     },
     {
-        "title": "Daily Coding Problem: Two Sum #1",
+        "title": "Two Sum #1",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/3",
         "companies": [
             "Google"
