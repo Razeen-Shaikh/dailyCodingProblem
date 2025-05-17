@@ -168,6 +168,18 @@
         "notes": "Given a dictionary of words and a string made up of those words (no spaces), return the original sentence in a list. If there is more than one possible reconstruction, return any of them. If there is no possible reconstruction, then return null.\n\nFor example, given the set of words 'quick', 'brown', 'the', 'fox', and the string \"thequickbrownfox\", you should return ['the', 'quick', 'brown', 'fox'].\n\nGiven the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string \"bedbathandbeyond\", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond']."
     },
     {
+        "title": "Longest Absolute File Path #17",
+        "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/55",
+        "companies": [
+            "Google"
+        ],
+        "difficulty": "Hard",
+        "status": "InProgress",
+        "tags": [],
+        "date_added": "2023-02-11",
+        "notes": "Suppose we represent our file system by a string in the following manner:\n\nThe string `\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"` represents:\n\n```bash\ndir\n    subdir1\n    subdir2\n        file.ext\n```\n\nThe directory `dir` contains an empty sub-directory subdir1 and a sub-directory subdir2 containing a file `file.ext`.\n\nThe string `\"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"` represents:\n\n```bash\ndir\n    subdir1\n        file1.ext\n        subsubdir1\n    subdir2\n        subsubdir2\n            file2.ext\n```\n\nThe directory `dir` contains two sub-directories subdir1 and subdir2. subdir1 contains a file file1.ext and an empty second-level sub-directory subsubdir1. subdir2 contains a second-level sub-directory subsubdir2 containing a file file2.ext.\n\nWe are interested in finding the longest (number of characters) absolute path to a file within our file system. For example, in the second example above, the longest absolute path is `\"dir/subdir2/subsubdir2/file2.ext\"`, and its length is 32 (not including the double quotes).\n\nGiven a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.\n\nNote:\n* The name of a file contains at least a period and an extension.\n* The name of a directory or sub-directory will not contain a period."
+    },
+    {
         "title": "Rolling Order Log #16",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/52",
         "companies": [
@@ -288,7 +300,7 @@
         "notes": "`cons(a, b)` constructs a pair, and `car(pair)` and `cdr(pair)` returns the first and last element of that pair. For example, `car(cons(3, 4))` returns `3`, and `cdr(cons(3, 4))` returns `4`.\n\nGiven this implementation of cons:\n\n```py\ndef cons(a, b):\n    def pair(f):\n        return f(a, b)\n    return pair\n```\n\nImplement `car` and `cdr`."
     },
     {
-        "title": "Daily Coding Problem: Problem #4",
+        "title": "First Missing Positive #4",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6",
         "companies": [
             "Stripe"
@@ -300,19 +312,19 @@
         "notes": "Given an array of integers, find the first missing positive integer in linear time and constant space. In other words, find the lowest positive integer that does not exist in the array. The array can contain duplicates and negative numbers as well.\n\nFor example, the input `[3, 4, -1, 1]` should give `2`. The input `[1, 2, 0]` should give `3`.\n\nYou can modify the input array in-place."
     },
     {
-        "title": "Daily Coding Problem: Problem #3",
+        "title": "Binary Tree Serialization and Deserialization #3",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/5",
         "companies": [
             "Google"
         ],
         "difficulty": "Medium",
-        "status": "InProgress",
+        "status": "Solved",
         "tags": [],
         "date_added": "2023-02-11",
         "notes": "![Google](https://img.shields.io/badge/Google-4285F4?logo=google&logoColor=fff&style=for-the-badge)\n\nGiven the root to a binary tree, implement `serialize(root)`, which serializes the tree into a string, and `deserialize(s)`, which deserializes the string back into the tree.\n\nFor example, given the following Node class\n```\nclass Node:\n    def __init__(self, val, left=None, right=None):\n        self.val = val\n        self.left = left\n        self.right = right\n```\nThe following test should pass:\n```\nnode = Node('root', Node('left', Node('left.left')), Node('right'))\nassert deserialize(serialize(node)).left.left.val == 'left.left'\n```"
     },
     {
-        "title": "Daily Coding Problem: Array Product Except Self #2",
+        "title": "Array Product Except Self #2",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/4",
         "companies": [
             "Uber"
@@ -324,7 +336,7 @@
         "notes": "Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.\n\nFor example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].\n\nFollow-up: what if you can't use division?"
     },
     {
-        "title": "Daily Coding Problem: Job Scheduler #10",
+        "title": "Job Scheduler #10",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/12",
         "companies": [
             "Apple"
@@ -336,7 +348,7 @@
         "notes": "Implement a job scheduler which takes in a function `f` and an integer `n`, and calls `f` after `n` milliseconds."
     },
     {
-        "title": "Daily Coding Problem: Two Sum #1",
+        "title": "Two Sum #1",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/3",
         "companies": [
             "Google"
