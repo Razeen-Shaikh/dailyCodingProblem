@@ -6,15 +6,15 @@ import re
 import logging
 
 # File paths
-PROBLEMS_FILE = "problems.json"
-README_FILE = "README.md"
-STATS_IMAGE = "stats.png"
+PROBLEMS_FILE = "../problems.json"
+README_FILE = "../README.md"
+STATS_IMAGE = "../stats.png"
 
 # Define colors for companies
 COMPANY_COLORS = {
     "Amazon": "orange", "Google": "blue", "Microsoft": "green", "Uber": "black",
     "Apple": "gray", "Pivotal": "teal", "Twitter": "lightblue", "Square": "purple",
-    "JaneStreet": "red", "Stripe": "#635bff",
+    "JaneStreet": "red", "Stripe": "#635BFF",
     "Facebook": "#3b5998", "Airbnb": "#ff5a60"
 }
 DEFAULT_COLOR = "blue"
@@ -125,7 +125,7 @@ for _, row in company_stats.iterrows():
 
 markdown_table += """</table>
 
-<p align="center" style="margin-top: 20px;">
+<p align="left" style="margin-top: 20px;">
     <img src="stats.png" width="600px" alt="Problem Statistics">
 </p>
 
