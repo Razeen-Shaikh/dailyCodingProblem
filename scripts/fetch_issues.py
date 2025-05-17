@@ -1,6 +1,12 @@
 import json
 import requests
 from datetime import datetime
+import os
+
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+# 📂 File Paths
+PROBLEMS_FILE = os.path.join(REPO_ROOT, "problems.json")
 
 # GitHub repo details
 REPO_OWNER = "Razeen-Shaikh"
@@ -66,7 +72,7 @@ for issue in issues:
     })
 
 # Save to JSON
-with open("../problems.json", "w") as f:
+with open(PROBLEMS_FILE, "w") as f:
     json.dump(problems, f, indent=4)
 
 print("✅ Successfully fetched and saved enriched problems to problems.json")
