@@ -1,14 +1,16 @@
 import json
-import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import re
 import logging
+import os
 
-# File paths
-PROBLEMS_FILE = "../problems.json"
-README_FILE = "../README.md"
-STATS_IMAGE = "../stats.png"
+REPO_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+
+# 📂 File Paths
+PROBLEMS_FILE = os.path.join(REPO_ROOT, "problems.json")
+README_FILE = os.path.join(REPO_ROOT, "README.md")
+STATS_IMAGE = os.path.join(REPO_ROOT, "stats.png")
 
 # Define colors for companies
 COMPANY_COLORS = {
