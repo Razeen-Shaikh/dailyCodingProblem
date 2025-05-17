@@ -26,9 +26,6 @@ jobs:
       - name: Update Problems Table
         run: python scripts/update_problems_table.py
 
-      - name: Generate Problem Graph
-        run: python scripts/generate_problem_graph.py
-
       - name: Configure Git
         run: |
           git config user.name "github-actions"
@@ -67,4 +64,3 @@ jobs:
           token: ${{ secrets.GH_PAT }}
           pull-request-number: ${{ steps.create_pr.outputs.pull-request-number }}
           merge-method: squash
-          

@@ -1,28 +1,27 @@
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
 import re
 
 # 📂 File Paths
-PROBLEMS_FILE = "problems.json"
-README_FILE = "README.md"
-STATS_IMAGE = "stats.png"
+PROBLEMS_FILE = "../problems.json"
+README_FILE = "../README.md"
+STATS_IMAGE = "../stats.png"
 
 # 🎨 Define Colors for Companies
 COMPANY_COLORS = {
-    "Amazon": "orange",
-    "Google": "blue",
+    "Amazon": "FF9900",
+    "Google": "4285F4",
     "Microsoft": "green",
-    "Uber": "black",
-    "Apple": "gray",
-    "Pivotal": "teal",
-    "Twitter": "lightblue",
-    "Square": "purple",
+    "Uber": "000000",
+    "Apple": "000000",
+    "Pivotal": "517A9E",
+    "X": "#000000",
+    "Square": "3E4348",
     "JaneStreet": "red",
-    "Stripe": "#635bff",
-    "Facebook": "#3b5998",
-    "Airbnb": "#ff5a60",
+    "Stripe": "635bff",
+    "Facebook": "0866FF",
+    "Airbnb": "FF5A5F",
 }
 DEFAULT_COLOR = "blue"  # Fallback color
 
@@ -34,6 +33,13 @@ STATUS_COLORS = {"Solved": "success", "InProgress": "yellow"}
 try:
     with open(PROBLEMS_FILE, "r") as file:
         problems = json.load(file)
+
+        def extract_problem_number(title):
+            match = re.search(r"#(\d+)", title)
+            return int(match[1]) if match else float('inf')
+
+        problems.sort(key=lambda problem: extract_problem_number(problem["title"]))
+
 except (FileNotFoundError, json.JSONDecodeError):
     print("❌ Error: Could not load problems.json.")
     exit(1)
@@ -92,6 +98,7 @@ for idx, problem in enumerate(problems, 1):
             for company in problem.get("companies", [])
         ]
     )
+    print(f"Company Badges: {company_badges}")
     difficulty_badge = f"<img src='https://img.shields.io/badge/Difficulty-{problem['difficulty'].replace(' ', '%20')}-{DIFFICULTY_COLORS.get(problem['difficulty'], 'lightgray')}?style=flat' height='20'/>"
     status_badge = f"<img src='https://img.shields.io/badge/Status-{problem['status']}-{STATUS_COLORS.get(problem['status'], 'lightgray')}?style=flat' height='20'/>"
     tags = ", ".join(problem.get("tags", []))

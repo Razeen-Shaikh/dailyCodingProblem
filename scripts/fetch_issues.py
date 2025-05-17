@@ -66,7 +66,7 @@ for issue in issues:
     })
 
 # Save to JSON
-with open("problems.json", "w") as f:
+with open("../problems.json", "w") as f:
     json.dump(problems, f, indent=4)
 
 print("✅ Successfully fetched and saved enriched problems to problems.json")
