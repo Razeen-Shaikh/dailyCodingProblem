@@ -72,7 +72,7 @@ for issue in issues:
     })
 
 # Save to JSON
-with open(PROBLEMS_FILE, "w") as f:
+with open(PROBLEMS_FILE, "w", encoding="utf-8") as f:
     json.dump(problems, f, indent=4)
 
 print("✅ Successfully fetched and saved enriched problems to problems.json")
