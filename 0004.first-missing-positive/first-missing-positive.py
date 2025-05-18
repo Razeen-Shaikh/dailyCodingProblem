@@ -14,7 +14,14 @@ def firstMissingPositive(arr):
         int: The first missing positive integer in the array.
 
     """
-    return next((i for i in range(1, len(arr)) if i not in arr), len(arr))
+    n = len(arr)
+
+    for i in range(n):
+        while 1 <= arr[i] <= n and arr[arr[i] - 1] != arr[i]:
+            correct_idx = arr[i] - 1
+            arr[i], arr[correct_idx] = arr[correct_idx], arr[i]
+
+    return next((i + 1 for i in range(n) if arr[i] != i + 1), n + 1)
 
 arr = [3, 4, -1, 1]
 print(firstMissingPositive(arr))
