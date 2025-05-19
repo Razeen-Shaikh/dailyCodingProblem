@@ -44,7 +44,7 @@
       <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6'>First Missing Positive #4</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Stripe-635bff?style=flat&logo=stripe' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Hard-red?style=flat' height='20'/></td>
-      <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
+      <td align='center'><img src='https://img.shields.io/badge/Status-Solved-success?style=flat' height='20'/></td>
       <td>2023-02-11</td>
     </tr>
     <tr>
