@@ -1,4 +1,4 @@
-# Daily Coding Problem
+# Daily Coding Problem [![Update Problem Stats](https://github.com/Razeen-Shaikh/dailyCodingProblem/actions/workflows/update_stats.yml/badge.svg)](https://github.com/Razeen-Shaikh/dailyCodingProblem/actions/workflows/update_stats.yml)
 
 ## 🏆 Problems List
 
