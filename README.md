@@ -49,7 +49,7 @@
     </tr>
     <tr>
       <td>5</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/7'>Daily Coding Problem: Problem #5</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/7'>Functional Pair Extraction (car & cdr) #5</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-JaneStreet-red?style=flat&logo=janestreet' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Medium-orange?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
