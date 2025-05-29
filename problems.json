@@ -1,6 +1,6 @@
 [
     {
-        "title": "Daily Coding Problem: Problem #273",
+        "title": "Fixed Point in Sorted Array #273",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/27",
         "companies": [
             "Apple"
@@ -276,7 +276,7 @@
         "notes": "Given the mapping `a = 1, b = 2, ... z = 26`, and an encoded message, count the number of ways it can be decoded.\n\nFor example, the message `'111'` would give `3`, since it could be decoded as `'aaa', 'ka', and 'ak'`.\n\nYou can assume that the messages are decodable. For example, `'001'` is not allowed."
     },
     {
-        "title": "Daily Coding Problem: Problem #6",
+        "title": "XOR Linked List Implementation #6",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8",
         "companies": [
             "Google"
