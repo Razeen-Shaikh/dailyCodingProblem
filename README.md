@@ -57,7 +57,7 @@
     </tr>
     <tr>
       <td>6</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8'>Daily Coding Problem: Problem #6</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8'>XOR Linked List Implementation #6</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Google-4285F4?style=flat&logo=google' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Hard-red?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -257,7 +257,7 @@
     </tr>
     <tr>
       <td>31</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/27'>Daily Coding Problem: Problem #273</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/27'>Fixed Point in Sorted Array #273</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Apple-000000?style=flat&logo=apple' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
