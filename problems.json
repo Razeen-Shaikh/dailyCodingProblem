@@ -264,7 +264,7 @@
         "notes": "![](https://img.shields.io/badge/Google-4285F4?logo=google&logoColor=fff&style=for-the-badge)\n\nA unival tree (which stands for \"universal value\") is a tree where all nodes under it have the same value.\n\nGiven the root to a binary tree, count the number of unival subtrees.\n\nFor example, the following tree has 5 unival subtrees:\n\n```txt\n   0\n  / \\\n 1   0\n    / \\\n   1   0\n  / \\\n 1   1\n```"
     },
     {
-        "title": "Daily Coding Problem: Problem #7",
+        "title": "Decoding Ways Count #7",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/9",
         "companies": [
             "Facebook"

@@ -65,7 +65,7 @@
     </tr>
     <tr>
       <td>7</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/9'>Daily Coding Problem: Problem #7</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/9'>Decoding Ways Count #7</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Facebook-0866FF?style=flat&logo=facebook' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Medium-orange?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
