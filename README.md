@@ -1,4 +1,4 @@
-# Daily Coding Problem
+# Daily Coding Problem [![Update Problem Stats](https://github.com/Razeen-Shaikh/dailyCodingProblem/actions/workflows/update_stats.yml/badge.svg)](https://github.com/Razeen-Shaikh/dailyCodingProblem/actions/workflows/update_stats.yml)
 
 ## 🏆 Problems List
 
@@ -44,12 +44,12 @@
       <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/6'>First Missing Positive #4</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Stripe-635bff?style=flat&logo=stripe' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Hard-red?style=flat' height='20'/></td>
-      <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
+      <td align='center'><img src='https://img.shields.io/badge/Status-Solved-success?style=flat' height='20'/></td>
       <td>2023-02-11</td>
     </tr>
     <tr>
       <td>5</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/7'>Daily Coding Problem: Problem #5</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/7'>Functional Pair Extraction (car & cdr) #5</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-JaneStreet-red?style=flat&logo=janestreet' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Medium-orange?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -57,7 +57,7 @@
     </tr>
     <tr>
       <td>6</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8'>Daily Coding Problem: Problem #6</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/8'>XOR Linked List Implementation #6</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Google-4285F4?style=flat&logo=google' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Hard-red?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -65,7 +65,7 @@
     </tr>
     <tr>
       <td>7</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/9'>Daily Coding Problem: Problem #7</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/9'>Decoding Ways Count #7</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Facebook-0866FF?style=flat&logo=facebook' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Medium-orange?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -257,7 +257,7 @@
     </tr>
     <tr>
       <td>31</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/27'>Daily Coding Problem: Problem #273</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/27'>Fixed Point in Sorted Array #273</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Apple-000000?style=flat&logo=apple' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
