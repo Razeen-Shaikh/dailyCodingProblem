@@ -12,7 +12,7 @@
         "notes": "A fixed point in an array is an element whose value is equal to its index. Given a sorted array of distinct elements, return a fixed point, if one exists. Otherwise, return `False`.\n\nFor example, given `[-6, 0, 2, 40]`, you should return `2`. Given `[1, 5, 7, 8]`, you should return `False`."
     },
     {
-        "title": "Daily Coding Problem: Problem #266",
+        "title": "Step Word Expansion #266",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/26",
         "companies": [
             "Pivotal"
@@ -24,7 +24,7 @@
         "notes": "A step word is formed by taking a given word, adding a letter, and anagramming the result. For example, starting with the word \"APPLE\", you can add an \"A\" and anagram to get \"APPEAL\".\n\nGiven a dictionary of words and an input word, create a function that returns all valid step words."
     },
     {
-        "title": "Daily Coding Problem: Problem #233",
+        "title": "Constant Space Fibonacci #233",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/25",
         "companies": [
             "Apple"
@@ -36,7 +36,7 @@
         "notes": "Implement the function `fib(n)`, which returns the <code>n<sup>th</sup></code> number in the Fibonacci sequence, using only `O(1)` space."
     },
     {
-        "title": "Daily Coding Problem: Problem #210",
+        "title": "Collatz sequence #210",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/24",
         "companies": [
             "Apple"
@@ -48,7 +48,7 @@
         "notes": "A Collatz sequence in mathematics can be defined as follows. Starting with any positive integer:\n\nif n is even, the next number in the sequence is n / 2\nif n is odd, the next number in the sequence is 3n + 1\nIt is conjectured that every such sequence eventually reaches the number `1`. Test this conjecture.\n\nBonus: What input `n <= 1000000` gives the longest sequence?"
     },
     {
-        "title": "Daily Coding Problem: Problem #196",
+        "title": "Most Frequent Subtree Sum #196",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/23",
         "companies": [
             "Apple"
@@ -60,7 +60,7 @@
         "notes": "Given the root of a binary tree, find the most frequent subtree sum. The subtree sum of a node is the sum of all values under a node, including the node itself.\n\nFor example, given the following tree:\n```\n  5\n / \\\n2  -5\n```\nReturn `2` as it occurs twice: once as the left leaf, and once as the sum of `2 + 5 - 5`."
     },
     {
-        "title": "Daily Coding Problem: Problem #162",
+        "title": "Shortest Unique Prefix #162",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/22",
         "companies": [
             "Square"
@@ -69,7 +69,7 @@
         "status": "InProgress",
         "tags": [],
         "date_added": "2025-03-06",
-        "notes": "Given a list of words, return the shortest unique prefix of each word. For example, given the list:\n\ndog\ncat\napple\napricot\nfish\nReturn the list:\n\nd\nc\napp\napr\nf"
+        "notes": "Given a list of words, return the shortest unique prefix of each word. For example, given the list:\n```txt\ndog\ncat\napple\napricot\nfish\nReturn the list:\n\nd\nc\napp\napr\nf\n```"
     },
     {
         "title": "Daily Coding Problem: Problem #148",

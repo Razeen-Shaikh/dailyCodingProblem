@@ -217,7 +217,7 @@
     </tr>
     <tr>
       <td>26</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/22'>Daily Coding Problem: Problem #162</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/22'>Shortest Unique Prefix #162</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Square-3E4348?style=flat&logo=square' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Medium-orange?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -225,7 +225,7 @@
     </tr>
     <tr>
       <td>27</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/23'>Daily Coding Problem: Problem #196</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/23'>Most Frequent Subtree Sum #196</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Apple-000000?style=flat&logo=apple' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -233,7 +233,7 @@
     </tr>
     <tr>
       <td>28</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/24'>Daily Coding Problem: Problem #210</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/24'>Collatz sequence #210</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Apple-000000?style=flat&logo=apple' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -241,7 +241,7 @@
     </tr>
     <tr>
       <td>29</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/25'>Daily Coding Problem: Problem #233</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/25'>Constant Space Fibonacci #233</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Apple-000000?style=flat&logo=apple' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
@@ -249,7 +249,7 @@
     </tr>
     <tr>
       <td>30</td>
-      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/26'>Daily Coding Problem: Problem #266</a></td>
+      <td><a href='https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/26'>Step Word Expansion #266</a></td>
       <td align='center'><img src='https://img.shields.io/badge/-Pivotal-517A9E?style=flat&logo=pivotal' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Difficulty-Easy-brightgreen?style=flat' height='20'/></td>
       <td align='center'><img src='https://img.shields.io/badge/Status-InProgress-yellow?style=flat' height='20'/></td>
