@@ -72,7 +72,7 @@
         "notes": "Given a list of words, return the shortest unique prefix of each word. For example, given the list:\n```txt\ndog\ncat\napple\napricot\nfish\nReturn the list:\n\nd\nc\napp\napr\nf\n```"
     },
     {
-        "title": "Daily Coding Problem: Problem #148",
+        "title": "Gray code #148",
         "url": "https://github.com/Razeen-Shaikh/dailyCodingProblem/issues/21",
         "companies": [
             "Apple"
